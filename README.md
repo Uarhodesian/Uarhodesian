@@ -1,5 +1,5 @@
 
-0 index.html contains our simple page 
+index.html contains our simple page 
 
 1 put file "script" to our ubuntu
 
