@@ -1,0 +1,10 @@
+FROM ubuntu
+ADD ./index.html /usr/src/index.html
+ADD ./script.sh /usr/src/script.sh
+RUN chmod +x /usr/src/script.sh
+RUN apt-get update && apt-get install -y \
+curl
+ENTRYPOINT [ "usr/src/script.sh" ]
+RUN curl http://localhost:8080
+
+
